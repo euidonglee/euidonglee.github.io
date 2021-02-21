@@ -8,7 +8,7 @@ categories: Data_Science
 2. Improve performance with ***feature engineering.***
 
 ## Dataset
-**Optical Recognition of Handwritten Digits Data Set(https://archive.ics.uci.edu/ml/datasets/Optical+Recognition+of+Handwritten+Digits)**
+Optical Recognition of Handwritten Digits Data Set (https://archive.ics.uci.edu/ml/datasets/Optical+Recognition+of+Handwritten+Digits)
 
 The famous MNIST dataset is compressed from 28 * 28 pixels to 8x8 pixels, adding some optical distortion to the image. The digits are written by a total of 43 writers.
 
