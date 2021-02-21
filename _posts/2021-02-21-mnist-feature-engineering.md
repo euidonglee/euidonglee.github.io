@@ -3,7 +3,7 @@ title: "[Optical Recognition of Handwritten Digits] Project Overview"
 date: 2020-06-24 22:20:32 -0400
 categories: Data_Science
 ---
-##Objective
+## Objective
 1. Classify handwritten digits by using conventional machine learning techniques. **(Non Deep learning)**
 2. Improve performance by using **feature engineering.**
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
