@@ -12,7 +12,7 @@ By using ***image augmentation*** we can:
 For image augmentation I used the [albumentations](https://github.com/albumentations-team/albumentations) API.
 Image augmentation can be easily done with the torchvision-transform style framework of albumentations.
 
-'''python
+~~~python
 from matplotlib import pyplot as plt
 import cv2
 import albumentations as A
@@ -31,7 +31,6 @@ def plot_img(n, transform):
 
 transform = A.HorizontalFlip(p=1)
 plot_img(10000, transform)
-
-'''
+~~~
 
 ![Albumentations HorizontalFlip](/assets/images/dacon_computer_vision_0.png)
