@@ -1,5 +1,5 @@
 ---
-title: "[Optical Recognition of Handwritten Digits] Project Overview"
+title: "[Optical Recognition of Handwritten Digits] 0. Project Overview"
 date: 2020-06-24 22:20:32 -0400
 categories: Data_Science
 ---
