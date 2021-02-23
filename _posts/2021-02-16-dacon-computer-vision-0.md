@@ -11,7 +11,7 @@ categories: Data_Science
 
 10 to 15 handwritten alphabets are randomly placed in a (256, 256) size image. The alphabets are from the EMNIST dataset.
 
-![Snipshot of our dataset](/assets/images/dacon-computer-vision_0.png)
+![Snipshot of our dataset](/assets/images/dacon_computer_vision_0.png)
 
 ## Scoring Metrics
 Score is the accuracy of the test set.
