@@ -1,5 +1,5 @@
 ---
-title: "[DACON 2nd Computer Vision Competition] Project Overview"
+title: "[DACON 2nd Computer Vision Competition] 0. Project Overview"
 date: 2021-02-16 22:00:02 -0400
 categories: Data_Science
 ---
