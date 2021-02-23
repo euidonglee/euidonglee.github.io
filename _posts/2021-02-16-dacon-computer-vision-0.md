@@ -4,7 +4,7 @@ date: 2021-02-16 22:00:02 -0400
 categories: Data_Science
 ---
 ## Objective
-1. Detect which alphabets are inside the given image. ***(Multi-label classification)***
+Detect which alphabets are inside the given image. ***(Multi-label classification)***
 
 ## Dataset
 [DACON 2nd Computer Vision Competition](https://dacon.io/competitions/official/235697/overview/)
