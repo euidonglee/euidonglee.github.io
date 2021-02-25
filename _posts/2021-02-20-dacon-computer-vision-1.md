@@ -103,5 +103,6 @@ for batch_id, (img, label) in enumerate(train_loader):
     # Show 0th image in 0th batch
     plt.imshow(img[0])
     break
+~~~
 
 ![Albumentations pipeline](/assets/images/dacon_computer_vision_1_1.png)
