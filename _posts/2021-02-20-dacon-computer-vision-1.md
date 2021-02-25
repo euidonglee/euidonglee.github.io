@@ -17,7 +17,7 @@ from matplotlib import pyplot as plt
 import cv2
 import albumentations as A
 
-#This will plot transformed image of 'test_data_root/n.png'
+# This will plot transformed image of 'test_data_root/n.png'
 def plot_img(n, transform):
     img = cv2.imread(train_data_root + '/{}.png'.format(n), cv2.IMREAD_COLOR)
     transformed_img = transform(image = img)['image']
@@ -30,7 +30,10 @@ def plot_img(n, transform):
     plt.imshow(transformed_img)
 
 transform = A.HorizontalFlip(p=1)
+# Plot 10000.png
 plot_img(10000, transform)
 ~~~
 
-![Albumentations HorizontalFlip](/assets/images/dacon_computer_vision_0.png)
+![Albumentations HorizontalFlip](/assets/images/dacon_computer_vision_1_0.png)
+
+# HHHI!!
