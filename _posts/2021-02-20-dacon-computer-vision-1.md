@@ -50,3 +50,58 @@ transform = A.Compose([
 ~~~
 
 ![Albumentations pipeline](/assets/images/dacon_computer_vision_1_1.png)
+
+## Implementing the pytorch DataLoader
+Now by implementing the pytorch DataLoader with our albumentations pipeline, we can load random new images from our training set.
+
+~~~python
+class AugmentedDataset(Dataset):
+    def __init__(self, start, end, transform=None):
+        self.transform = transform
+        self.start = start
+        self.end = end
+    
+    # This will load 'start.png ~ end.png' into our Dataset.
+    def read_data(self, filepath):
+        self.dataset = []
+        for i in tqdm(range(self.start, self.end)):
+            img = cv2.imread(filepath + '/{0:05d}.png'.format(i), cv2.IMREAD_COLOR)
+            self.dataset.append(img)
+    
+    # Load our labels
+    def read_label(self, filepath):
+        self.labels = []
+        with open(filepath, 'r') as f:
+            reader = csv.reader(f)
+            next(reader)
+            for row in reader:
+                self.labels.append(row[1:])
+    
+    def __getitem__(self, i):
+        img = self.transform(image = self.dataset[i])['image']
+        label = np.array(self.labels[i]).astype('float32')
+        return img, label
+    
+    def __len__(self):
+        return len(self.dataset)
+
+# alubmentations pipeline for training data
+transform_train = A.Compose([
+    A.HorizontalFlip(p=0.5),
+    A.VerticalFlip(p=0.5),
+    A.RandomBrightnessContrast(p=1),
+    A.Rotate(p=1)
+])
+
+train_dataset = AugmentedDataset(0, 100, transform_train)
+train_dataset.read_data(train_data_root)
+train_dataset.read_label(data_root + '/dirty_mnist_2nd_answer.csv')
+
+train_loader = DataLoader(train_dataset, batch_size = 32)
+
+for batch_id, (img, label) in enumerate(train_loader):
+    # Show 0th image in 0th batch
+    plt.imshow(img[0])
+    break
+
+![Albumentations pipeline](/assets/images/dacon_computer_vision_1_1.png)
