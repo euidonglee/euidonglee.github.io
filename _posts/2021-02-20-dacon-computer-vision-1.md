@@ -8,7 +8,7 @@ By using ***image augmentation*** we can:
 1. Generate more training data.
 2. Make our computer vision model to learn structural features(e.g. edges of the alphabet) 
 
-## Albumentations: fast python library for image augmentation
+## Albumentations: Fast python library for image augmentation
 For image augmentation I used the [albumentations](https://github.com/albumentations-team/albumentations) API.
 Image augmentation can be easily done with the torchvision-transform style framework of albumentations.
 
@@ -36,4 +36,17 @@ plot_img(10000, transform)
 
 ![Albumentations HorizontalFlip](/assets/images/dacon_computer_vision_1_0.png)
 
-# HHHI!!
+## Setting custom albumentations pipeline
+By stacking multiple transforms with probability p, we can create a random-image generating albumentations pipeline.
+I used HorizontalFlip, VerticalFlip, RandomBrightnessContrast, and Rotate.
+
+~~~python
+transform = A.Compose([
+    A.HorizontalFlip(p=0.5),
+    A.VerticalFlip(p=0.5),
+    A.RandomBrightnessContrast(p=1),
+    A.Rotate(p=1)
+])
+~~~
+
+![Albumentations pipeline](/assets/images/dacon_computer_vision_1_1.png)
