@@ -105,4 +105,4 @@ for batch_id, (img, label) in enumerate(train_loader):
     break
 ~~~
 
-![Albumentations pipeline](/assets/images/dacon_computer_vision_1_1.png)
+![Albumentations pipeline](/assets/images/dacon_computer_vision_1_2.png)
