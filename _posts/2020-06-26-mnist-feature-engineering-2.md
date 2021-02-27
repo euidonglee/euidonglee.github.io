@@ -21,9 +21,16 @@ Let's use ***soft-margin SVM***, because the pixel values of a certain digits ca
 ## Results
 First, we measure F-1 scores on several models, on raw feature matrix `X`:
 
-|Classifier|Naive Bayes|KNN|Random Forest|
-|:--|:--|:--|:--|
-|F-1 score|0.808952|0.882951|0.941521|
+|Classifier|Naive Bayes|KNN|Random Forest|SVM(RBF Kernel, C=10)|
+|:---|:---|:---|:---|:---|
+|**F-1 score**|0.808952|0.882951|0.941521|0.967708|
+
+By applying ***soft-margin SVM*** by using **C=1.5**, we get:
+|C|1.5|
+|:---|:---|
+|F-1 score|0.970460|
+
+
 
 
 
