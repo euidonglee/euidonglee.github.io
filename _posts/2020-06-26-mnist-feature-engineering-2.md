@@ -15,6 +15,7 @@ Let's use ***soft-margin SVM***, because the pixel values of a certain digits ca
 ## Experimental environments
 
 |library|numpy|1.18.1|
+|---|---|---|
 |version|scikit-learn|0.22.1|
 
 ## Results
