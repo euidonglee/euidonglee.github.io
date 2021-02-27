@@ -5,6 +5,7 @@ categories: Data_Science
 ---
 ## Observing the features
 The features are integer values from 0 to 16, for each pixel `p_ij`. That is, there are 64 features in our image `X: {x_0 = p_00, x_1 = p_01, ... , x_63 = p_77}`, and 9 classes in `Y: {0, 1, ... , 9}`.
+
 Note that each feature `x_k` in `X` is simply just a value of one pixel. Does it really contain some meaningful information?
 
 Let's observe the following images, which are all classified as '5':
@@ -22,6 +23,7 @@ I applied a simple **3 x 3 average kernel** as follows:
 ![figure 2](/assets/images/optical_recognition_1_1.png)
 
 First, I compute the average of 3 x 3 pixels which are `p_ij`'s neighbors, so that it can hold information about pixels near `p_ij`. But we don't want to lose information about `p_ij`, so finally we add its value.
+
 Before applying the kernel, a zero padding is added to the image, so that we don't lose information about the outmost pixels. Now we replace our old features to new features `X: {x_0 = f(p_00), x_1 = f(p_01), ... , x_63 = f(p_77)}`.
 
 ~~~python
