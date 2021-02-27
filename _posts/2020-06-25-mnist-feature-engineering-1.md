@@ -50,7 +50,7 @@ Then our features look something like:
 
 ![figure 3](/assets/images/optical_recognition_1_2.png)
 
-Now it looks much better. The values in `x_34` contain some information about their neighbors, and the overall shape of digit '5' is maintained.
+Now it looks much better. The values in `x_36` contain some information about their neighbors, and the overall shape of digit '5' is maintained.
 
 ### Feature 2. Center column mean & Center row mean
 ![figure 4](/assets/images/optical_recognition_1_3.png)
