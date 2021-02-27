@@ -5,6 +5,14 @@ categories: Data_Science
 ---
 ## Observing the features
 The features are integer values from 0 to 16, for each pixel `p_ij`. That is, there are 64 features in our image `X: {x_0 = p_00, x_1 = p_01, ... , x_63 = p_77}`, and 9 classes in `Y: {0, 1, ... , 9}`.
+Note that each feature `x_k` in `X` is simply just a value of one pixel. Does it really contain some meaningful information?
+
+Let's observe the following images, which are all classified as '5':
+
+![figure 1](/assets/images/optical_recognition_1_0.png)
+
+If we look at feature `x_36`, which is the value of pixel (4, 4), we can see that the value at each image greatly differs, but the images all need to be classified as '5'.
+
 
 ## Dataset
 [Optical Recognition of Handwritten Digits Data Set](https://archive.ics.uci.edu/ml/datasets/Optical+Recognition+of+Handwritten+Digits)
