@@ -18,7 +18,15 @@ Let's use ***soft-margin SVM***, because the pixel values of a certain digits ca
 |numpy|1.18.1|
 |scikit-learn|0.22.1|
 
-### Feature 1. 3 x 3 Average kernel
+## Results
+First, we measure F-1 scores on several models, on raw feature matrix `X`:
+
+|Classifier|Naive Bayes|KNN|Random Forest|
+|:--|:--|:--|:--|
+|F-1 score|0.808952|0.882951|0.941521|
+
+
+
 I applied a simple **3 x 3 average kernel** as follows:
 
 ![figure 2](/assets/images/optical_recognition_1_1.png)
