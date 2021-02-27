@@ -10,7 +10,7 @@ A **Random Forest** seems ok, but note that decision trees are based on a *greed
 
 **SVM** works very well in most of ML problems, especially on datasets with high dimensional space. One disadvantage of SVM is that the computing time can be very high in large datasets. Our dataset has a high dimentional space, and the size is relatively small (3823 instances in training set). Plus, we can classify all the features at once, by finding a single vector. This can give an overall view of an image. So there's no reason not to use SVM.
 
-Let's use ***soft-margin SVM***, because the pixel values of a certain digits can always change, and the result would be disastrous if the model overfits to the training set.
+Let's use ***soft-margin SVM***, because the pixel values of a certain digit can always change, and the result would be disastrous if the model overfits to the training set.
 
 ## Experimental environments
 
