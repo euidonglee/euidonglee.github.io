@@ -16,7 +16,7 @@ If we look at feature `x_36`, which is the value of pixel (4, 4), we can see tha
 ## Feature enginnering
 One problem is that the features are too local; they don't have any information about the neighbors. I tried some new features to solve this problem.
 
-## Feature 1. 3 x 3 Average Kernel
+### Feature 1. 3 x 3 Average Kernel
 I applied a simple 3 x 3 average kernel as follows:
 
 
