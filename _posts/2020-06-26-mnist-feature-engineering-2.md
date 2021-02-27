@@ -25,6 +25,7 @@ First, we measure F-1 scores on several models, on raw feature matrix `X`:
 |:---|:---|:---|:---|:---|
 |**F-1 score**|0.808952|0.882951|0.941521|0.967708|
 
+
 By applying ***soft-margin SVM*** by using **C=1.5**, we get:
 
 |C|1.5|
@@ -39,6 +40,7 @@ By adding individual features we get:
 |Feature|3x3 kernel|center row mean|center col mean|
 |:---|:---|:---|:---|
 |**F-1 score**|0.974957|0.971570|0.970467|
+
 
 By adding all features at once we get the final result:
 |Feature|3x3 kernel + center row mean + center col mean|
