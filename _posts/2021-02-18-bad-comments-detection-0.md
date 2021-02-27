@@ -1,7 +1,7 @@
 ---
 title: "[Social Network Bad Comments Detection] 0. Project Overview"
 date: 2021-02-18 22:00:02 -0400
-categories: Data_Science
+categories: Data_Science NLP
 ---
 ## Objective
 1. Build a prediction model to classify whether a comment is bad or not.
