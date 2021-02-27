@@ -16,7 +16,7 @@ Let's use ***soft-margin SVM***, because the pixel values of a certain digits ca
 
 |library|numpy|1.18.1|
 |---|---|---|
-|version|scikit-learn|0.22.1|
+|**version**|**scikit-learn**|**0.22.1**|
 
 ## Results
 First, we measure F-1 scores on several models, on raw feature matrix `X`:
