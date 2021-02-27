@@ -13,10 +13,8 @@ SVM works very well in most of ML problems, expecially on datasets with high dim
 Let's use ***soft-margin SVM***, because the pixel values of a certain digits can always change, and the result would be disastrous if the model overfits to the training set.
 
 ## Experimental environments
-|library|version|
-|:---|:---|
-|numpy|1.18.1|
-|scikit-learn|0.22.1|
+|**library**|numpy|1.18.1|
+|**version**|scikit-learn|0.22.1|
 
 ## Results
 First, we measure F-1 scores on several models, on raw feature matrix `X`:
