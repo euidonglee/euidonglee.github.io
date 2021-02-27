@@ -43,6 +43,6 @@ By adding individual features we get:
 
 
 By adding all features at once we get the final result:
-|Feature|3x3 kernel + center row mean + center col mean|
+|Feature|3x3kernel+center row mean+center col mean|
 |:---|:---|
 |**F-1 score**|**0.980530**|
