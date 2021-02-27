@@ -4,7 +4,7 @@ date: 2020-06-25 22:20:32 -0400
 categories: Data_Science
 ---
 ## Observing the features
-The features are integer values from 0 to 16, for each pixel $$p_ij$$.
+The features are integer values from 0 to 16, for each pixel 'p_ij'.
 
 ## Dataset
 [Optical Recognition of Handwritten Digits Data Set](https://archive.ics.uci.edu/ml/datasets/Optical+Recognition+of+Handwritten+Digits)
