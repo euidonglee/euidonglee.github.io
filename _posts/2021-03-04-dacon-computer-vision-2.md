@@ -58,7 +58,7 @@ optimizer = optim.Adam(model.parameters(), lr=1e-5)
 criterion = nn.MultiLabelSoftMarginLoss()
 ~~~
 
-We start training with learning rate 1e-5:
+We start training with learning rate **1e-5**:
 
 ~~~python
 local_loss_sum = 0
@@ -90,13 +90,13 @@ plt.plot(epoch_losses)
 
 ![epoch 0-150](/assets/images/dacon_computer_vision_2_0.png)
 
-We get a local minimum 0.03 at epoch 150.
+We get a local minimum **0.03** at epoch 150.
 
-We tune the learning rate to 1e-6 and continue training:
+We tune the learning rate to **1e-6** and continue training:
 
 ![epoch 0-210](/assets/images/dacon_computer_vision_2_1.png)
 
-We finally stop at loss 0.002 at epoch 210.
+We finally stop at loss **0.002** at epoch 210.
 
 ## Results
 ![results](/assets/images/dacon_computer_vision_2_2.png)
