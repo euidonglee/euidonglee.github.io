@@ -6,4 +6,4 @@ categories: Unity
 ## Creating a WORMS-style terrain
 For our WORMS-style minigame, the terrain should be able to easily change by bomb explosions.
 
-![worms terrain](/assets/images/covid_story_1_0.gif)
+![Worms Holy Hand Grenade](https://i.makeagif.com/media/1-21-2018/qiLMpA.gif)
