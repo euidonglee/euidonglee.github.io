@@ -12,6 +12,7 @@ In programmer's view, to do this we should observe bomb explosions at runtime, a
 Therefore the terrain should be:
 
 **1. Controlled pixel-wise.**
+
 **2. Can be destroyed dynamically.**
 
 A Unity ***Tilemap*** is perfect for our terrain.
