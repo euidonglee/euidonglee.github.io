@@ -13,5 +13,7 @@ categories: Unity
 [![COVID-STORY](https://img.youtube.com/vi/ikBeQN3YmRk/0.jpg)](https://www.youtube.com/watch?v=ikBeQN3YmRk)
 
 ***00:00 ~ 18:14 Main-Game***
+
 ***02:55 ~ 04:18 Mini-Game 1: Rhythm Game***
+
 ***04:45 ~ 14:16 Mini-Game 2: Turn-Based Strategy Game***
