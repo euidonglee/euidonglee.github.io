@@ -10,7 +10,7 @@ categories: Unity
 4. Satisfy the user with exciting **visual effects** and **audio sources.**
 
 ## Mini-Game 2: Turn-Based Strategy Game
-Our game follows the concept of a classic TBT game ***WORMS.***
+Our game follows the concept of a classic TBT game: ***WORMS.***
 
 [![WORMS](https://img.youtube.com/vi/u17ss8MXDCY/0.jpg)](https://www.youtube.com/watch?v=u17ss8MXDCY)
 
