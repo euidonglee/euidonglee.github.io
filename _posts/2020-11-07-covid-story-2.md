@@ -6,7 +6,7 @@ categories: Unity
 ## Creating a character script
 There are two types of characters in our game: ***player*** and ***enemy.***
 
-###Player
+### Player
 - Hi
 
 ![Worms Holy Hand Grenade](https://i.makeagif.com/media/1-21-2018/qiLMpA.gif)
