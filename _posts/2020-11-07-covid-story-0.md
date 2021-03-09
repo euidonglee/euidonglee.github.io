@@ -14,9 +14,9 @@ Our game follows the concept of a classic TBT game ***WORMS.***
 
 [![WORMS](https://img.youtube.com/vi/u17ss8MXDCY/0.jpg)](https://www.youtube.com/watch?v=u17ss8MXDCY)
 
-Each team can control only one character per turn.
-If a character falls in water or its hp bar hits 0, it dies.
-If all characters in opponent's team dies, you win.
+1. Each team can control only one character per turn.
+2. If a character falls in water or its hp bar hits 0, it dies.
+3. If all characters in opponent's team dies, you win.
 
 ## Youtube Link
 [![COVID-STORY](https://img.youtube.com/vi/ikBeQN3YmRk/0.jpg)](https://www.youtube.com/watch?v=ikBeQN3YmRk)
