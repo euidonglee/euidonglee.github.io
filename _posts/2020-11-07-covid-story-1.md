@@ -10,7 +10,8 @@ For our **Mini-Game 2: Turn-Based Strategy Game**, the functional requirements a
 1. **Player turn** and **enemy turn** is given alternately.
 2. Each turn has **time limits.**
 3. Player and enemy has **HP bars**. If it goes 0, character dies.
-4. If all of the opponent's team dies, that team wins the game. 
+4. If a character falls in water, it dies.
+5. If all of the opponent's team dies, that team wins the game. 
 
 ### 2. Player turn
 1. Can switch to **"Move mode"** or **"Attack mode"** by pressing **Q**.
