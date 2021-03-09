@@ -1,6 +1,6 @@
 ---
-title: "[COVID-STORY: Unity Game Project] 1. Creating the terrain"
-date: 2020-11-07 14:20:32 -0400
+title: "[COVID-STORY: Unity Game Project] 2. Creating the terrain"
+date: 2020-11-07 15:20:32 -0400
 categories: Unity
 ---
 ## Creating a WORMS-style terrain
