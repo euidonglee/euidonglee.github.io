@@ -45,4 +45,4 @@ We also add a water 2D Sprite and set z-position to -1:
 
 We finally add a Tilemap Collider to our terrain.
 
-![Tilemap Collider](/assets/images/covid_story_1_6.png)
+![Tilemap Collider](/assets/images/covid_story_1_7.png)
