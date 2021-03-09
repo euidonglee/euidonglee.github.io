@@ -53,7 +53,7 @@ public class PlayerController : CharacterController
     public override void TurnLogic(){
         if(transform.position.y < -25){
             // -25: y-position of water
-            // Logic when player's position goes under -25...
+            // Logic when player falls in water
         }
         if(Input.GetKeyDown("q")){
             if(Attack) Attack = false;  // Goes to Move mode
