@@ -1,46 +1,112 @@
 ---
-title: "[COVID-STORY: Unity Game Project] 3. Player Implementation: Move & jump"
+title: "[COVID-STORY: Unity Game Project] 3-1. Player Implementation: Move & Jump"
 date: 2020-11-07 16:20:32 -0400
 categories: Unity
 ---
-## Creating a character script
-We first create a CharacterController, which defines a character's behavior.
+## Character controller
+We first create a ***CharacterController***, which defines a character's behavior.
 
 ~~~csharp
-a = 1
+// CharacterController.cs
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public abstract class CharacterController : MonoBehaviour
+{
+    public bool isTurn = false;
+    
+    void Start()
+    {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(isTurn){
+            TurnLogic();
+        }
+
+    public abstract void TurnLogic();
+    public abstract void TurnExitLogic();
+}
 ~~~
 
-![Worms Holy Hand Grenade](https://i.makeagif.com/media/1-21-2018/qiLMpA.gif)
+A character just calls TurnLogic() at its turn, and calls TurnExitLogic() when its turn is over.
+For controlling turns, We will implement a ***TurnController*** later.
 
-In programmer's view, to do this we should observe bomb explosions at runtime, and destroy the pixel objects inside the area.
-Therefore the terrain should be:
+## Player controller
+Now we create a ***PlayerController***, which inherits ***CharacterController*** and defines a player's behavior.
 
-**1. Controlled pixel-wise.**
+~~~csharp
+// PlayerController.cs
 
-**2. Can be destroyed dynamically.**
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-A Unity ***Tilemap*** is perfect for our terrain.
+public bool Attack = false;
 
-We first upload our **tile sprites** in our tile assets:
+public class PlayerController : CharacterController
+{
+    public override void TurnLogic(){
+        if(transform.position.y < -25){
+            // -25: y-position of water
+            // Logic when player's position goes under -25...
+        }
+        if(Input.GetKeyDown("q")){
+            if(Attack) Attack = false;  // Goes to Move mode
+            else {
+                Attack = true;  // Goes to Attack mode
+            }
+        }
+        if(!Attack){  // Move mode
+            if(Move == 0){
+                // Logic when player starts moving
+                if(Input.GetKeyDown("a")) {  }
+                if(Input.GetKeyDown("d")) {  }
+            } else {
+                // Logic when player is moving 
+                if(Input.GetKeyUp("a") || Input.GetKeyUp("d")){
+                    // Logic when player stops moving
+                    Move = 0; 
+                    return;
+                }
+            }
 
-![Tile sprites](/assets/images/covid_story_1_1.png)
+            if(Input.GetKeyDown("space")){
+                // Logic when player starts jumping
+                Jump = true;
+            }
+            if(Input.GetKeyUp("space")){
+                // Logic when player stops jumping
+                Jump = false;
+            }
+            if(Jump){
+                Logic when player is jumping
+            }
+        } else {  // Attack mode
+            if(Input.GetMouseButtonDown(0)){
+                // Logic when player starts shooting
+                Shoot = true;
+            }
+            if(Input.GetMouseButtonUp(0)){
+                // Logic when player stops shooting
+                Shoot = false;
+                isTurn = false; // Turn is over
+            }
+            if(Shoot){
+                // Logic when player is shooting
+            }
+        }
+    }
 
-Then we open a **Tile Pallete** and create a terrain pallete:
-
-![Tile Pallete](/assets/images/covid_story_1_2.png)
-
-Finally we add our tile sprite on the pallete and start painting our terrain tilemap.
-
-![Painting tilemap](/assets/images/covid_story_1_3.png)
-
-## Adding background and water sprites
-
-We add a background 2D Sprite and set z-position to 1:
-
-![Background](/assets/images/covid_story_1_4.png)
-
-![Background](/assets/images/covid_story_1_6.png)
-
-We also add a water 2D Sprite and set z-position to -1:
-
-![Water](/assets/images/covid_story_1_5.png)
+    public override void TurnExitLogic(){
+        Move = 0;
+        Jump = false;
+        Attack = false;
+        Shoot = false;
+    }
+}
+~~~
