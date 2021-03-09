@@ -18,7 +18,7 @@ Our game follows the concept of a classic TBT game ***WORMS.***
 2. If a character falls in water or its hp bar hits 0, it dies.
 3. If all characters in opponent's team dies, you win.
 
-## Youtube Link
+## Youtube link of our game
 [![COVID-STORY](https://img.youtube.com/vi/ikBeQN3YmRk/0.jpg)](https://www.youtube.com/watch?v=ikBeQN3YmRk)
 
 ***00:00 ~ 18:14 Main-Game***
