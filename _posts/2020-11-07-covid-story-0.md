@@ -1,6 +1,6 @@
 ---
 title: "[COVID-STORY: Unity Game Project] 0. Project Overview"
-date: 2021-03-07 12:20:32 -0400
+date: 2020-11-07 12:20:32 -0400
 categories: Unity
 ---
 ## Objective
@@ -8,6 +8,13 @@ categories: Unity
 2. There will be **1 Main-Game** and **2 Mini-Games.**
 3. My team made ***Mini-Game 2: Turn-Based Strategy Game.***
 4. Satisfy the user with exciting **visual effects** and **audio sources.**
+
+## Mini-Game 2: Turn-Based Strategy Game
+Our game follows the concept of a classic TBT game ***WORMS.***
+[![WORMS](https://img.youtube.com/vi/u17ss8MXDCY/0.jpg)](https://www.youtube.com/watch?v=u17ss8MXDCY)
+Each team can control only one character per turn.
+If a character falls in water or its hp bar hits 0, it dies.
+If all characters in opponent's team dies, you win.
 
 ## Youtube Link
 [![COVID-STORY](https://img.youtube.com/vi/ikBeQN3YmRk/0.jpg)](https://www.youtube.com/watch?v=ikBeQN3YmRk)
