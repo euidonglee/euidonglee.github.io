@@ -25,5 +25,5 @@ For our **Mini-Game 2: Turn-Based Strategy Game**, the functional requirements a
 ### 4. Terrain
 1. The terrain can be changed(destroyed) by bombs.
 
-### 5. Audio & Visual effects
+### 5. Audio & visual effects
 1. The game should be exciting to users by using audio and visual effects.
