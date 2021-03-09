@@ -10,4 +10,4 @@ categories: Unity
 4. Satisfy the user with exciting **visual effects** and **audio sources.**
 
 ## Youtube Link
-![COVID-STORY](https://youtu.be/ikBeQN3YmRk)
+[COVID-STORY](https://youtu.be/ikBeQN3YmRk)
