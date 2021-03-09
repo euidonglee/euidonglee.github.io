@@ -11,7 +11,9 @@ categories: Unity
 
 ## Mini-Game 2: Turn-Based Strategy Game
 Our game follows the concept of a classic TBT game ***WORMS.***
+
 [![WORMS](https://img.youtube.com/vi/u17ss8MXDCY/0.jpg)](https://www.youtube.com/watch?v=u17ss8MXDCY)
+
 Each team can control only one character per turn.
 If a character falls in water or its hp bar hits 0, it dies.
 If all characters in opponent's team dies, you win.
