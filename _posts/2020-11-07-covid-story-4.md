@@ -1,0 +1,112 @@
+---
+title: "[COVID-STORY: Unity Game Project] 3-0. Player Implementation: Creating Unity Game Object"
+date: 2020-11-07 16:00:32 -0400
+categories: Unity
+---
+## Creating Unity GameObject
+We first create a ***CharacterController***, which defines a character's behavior.
+
+~~~csharp
+// CharacterController.cs
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public abstract class CharacterController : MonoBehaviour
+{
+    public bool isTurn = false;
+    
+    void Start()
+    {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(isTurn){
+            TurnLogic();
+        }
+
+    public abstract void TurnLogic();
+    public abstract void TurnExitLogic();
+}
+~~~
+
+A character just calls TurnLogic() at its turn, and calls TurnExitLogic() when its turn is over.
+For controlling turns, We will implement a ***TurnController*** later.
+
+## Player controller
+Now we create a ***PlayerController***, which inherits ***CharacterController*** and defines a player's behavior.
+
+~~~csharp
+// PlayerController.cs
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public bool Attack = false;
+
+public class PlayerController : CharacterController
+{
+    public override void TurnLogic(){
+        if(transform.position.y < -25){
+            // -25: y-position of water
+            // Logic when player falls in water
+        }
+        if(Input.GetKeyDown("q")){
+            if(Attack) Attack = false;  // Goes to Move mode
+            else {
+                Attack = true;  // Goes to Attack mode
+            }
+        }
+        if(!Attack){  // Move mode
+            if(Move == 0){
+                // Logic when player starts moving
+                if(Input.GetKeyDown("a")) {  }
+                if(Input.GetKeyDown("d")) {  }
+            } else {
+                // Logic when player is moving 
+                if(Input.GetKeyUp("a") || Input.GetKeyUp("d")){
+                    // Logic when player stops moving
+                    Move = 0; 
+                    return;
+                }
+            }
+
+            if(Input.GetKeyDown("space")){
+                // Logic when player starts jumping
+                Jump = true;
+            }
+            if(Input.GetKeyUp("space")){
+                // Logic when player stops jumping
+                Jump = false;
+            }
+            if(Jump){
+                Logic when player is jumping
+            }
+        } else {  // Attack mode
+            if(Input.GetMouseButtonDown(0)){
+                // Logic when player starts shooting
+                Shoot = true;
+            }
+            if(Input.GetMouseButtonUp(0)){
+                // Logic when player stops shooting
+                Shoot = false;
+                isTurn = false; // Turn is over
+            }
+            if(Shoot){
+                // Logic when player is shooting
+            }
+        }
+    }
+
+    public override void TurnExitLogic(){
+        Move = 0;
+        Jump = false;
+        Attack = false;
+        Shoot = false;
+    }
+}
+~~~
